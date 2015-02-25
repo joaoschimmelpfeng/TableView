@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vCH-Oh-HSA">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -39,9 +40,6 @@
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
-                                            <variation key="widthClass=compact" misplaced="YES">
-                                                <rect key="frame" x="322" y="11" width="42" height="21"/>
-                                            </variation>
                                         </label>
                                     </subviews>
                                     <constraints>
@@ -59,10 +57,10 @@
                                             <exclude reference="11E-Z8-YBj"/>
                                         </mask>
                                         <mask key="constraints">
-                                            <exclude reference="odG-ia-kmV"/>
-                                            <exclude reference="oeZ-0d-5mQ"/>
                                             <exclude reference="JAb-ik-TsU"/>
                                             <exclude reference="muS-7d-IrE"/>
+                                            <exclude reference="oeZ-0d-5mQ"/>
+                                            <exclude reference="odG-ia-kmV"/>
                                         </mask>
                                     </variation>
                                     <variation key="widthClass=compact">
@@ -72,10 +70,10 @@
                                             <include reference="11E-Z8-YBj"/>
                                         </mask>
                                         <mask key="constraints">
-                                            <include reference="odG-ia-kmV"/>
-                                            <include reference="oeZ-0d-5mQ"/>
                                             <include reference="JAb-ik-TsU"/>
                                             <include reference="muS-7d-IrE"/>
+                                            <include reference="oeZ-0d-5mQ"/>
+                                            <include reference="odG-ia-kmV"/>
                                         </mask>
                                     </variation>
                                 </tableViewCellContentView>
