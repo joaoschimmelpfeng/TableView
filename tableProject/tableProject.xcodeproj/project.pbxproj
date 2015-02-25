@@ -17,7 +17,7 @@
 		E66B0AF41A9E41E800AAEC7A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E66B0AF31A9E41E800AAEC7A /* Images.xcassets */; };
 		E66B0AF71A9E41E800AAEC7A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E66B0AF51A9E41E800AAEC7A /* LaunchScreen.xib */; };
 		E66B0B031A9E41E800AAEC7A /* tableProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E66B0B021A9E41E800AAEC7A /* tableProjectTests.m */; };
-		E66B0B0E1A9E42E900AAEC7A /* tableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E66B0B0D1A9E42E900AAEC7A /* tableViewController.m */; };
+		E66B0B141A9E481800AAEC7A /* tableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E66B0B131A9E481800AAEC7A /* tableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,8 +47,8 @@
 		E66B0AFC1A9E41E800AAEC7A /* tableProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tableProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E66B0B011A9E41E800AAEC7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E66B0B021A9E41E800AAEC7A /* tableProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tableProjectTests.m; sourceTree = "<group>"; };
-		E66B0B0C1A9E42E900AAEC7A /* tableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tableViewController.h; path = ../tableViewController.h; sourceTree = "<group>"; };
-		E66B0B0D1A9E42E900AAEC7A /* tableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = tableViewController.m; path = ../tableViewController.m; sourceTree = "<group>"; };
+		E66B0B121A9E481800AAEC7A /* tableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tableViewController.h; sourceTree = SOURCE_ROOT; };
+		E66B0B131A9E481800AAEC7A /* tableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tableViewController.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +94,8 @@
 				E66B0AEB1A9E41E800AAEC7A /* AppDelegate.m */,
 				D4BF5AED1A9E44C00083E3E9 /* AppTableViewCell.h */,
 				D4BF5AEE1A9E44C00083E3E9 /* AppTableViewCell.m */,
-				E66B0B0C1A9E42E900AAEC7A /* tableViewController.h */,
-				E66B0B0D1A9E42E900AAEC7A /* tableViewController.m */,
+				E66B0B121A9E481800AAEC7A /* tableViewController.h */,
+				E66B0B131A9E481800AAEC7A /* tableViewController.m */,
 				E66B0AF01A9E41E800AAEC7A /* Main.storyboard */,
 				E66B0AF31A9E41E800AAEC7A /* Images.xcassets */,
 				10B725741A9E48E9008D7C9F /* facebooklogo.jpg */,
@@ -236,9 +236,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E66B0B141A9E481800AAEC7A /* tableViewController.m in Sources */,
 				E66B0AEC1A9E41E800AAEC7A /* AppDelegate.m in Sources */,
 				D4BF5AEF1A9E44C00083E3E9 /* AppTableViewCell.m in Sources */,
-				E66B0B0E1A9E42E900AAEC7A /* tableViewController.m in Sources */,
 				E66B0AE91A9E41E800AAEC7A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

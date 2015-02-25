@@ -9,9 +9,13 @@
 #import "AppTableViewCell.h"
 
 @implementation AppTableViewCell
+@synthesize label1,imageView1;
 
-- (void)awakeFromNib {
-    // Initialization code
+
+
+- (void)awakeFromNib
+{
+    
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
