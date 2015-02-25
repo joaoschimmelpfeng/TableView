@@ -111,6 +111,16 @@ BOOL isEditing;
 - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
 {
     NSMutableArray *aux = apps;
+    [apps setObject:[apps objectAtIndex:[toIndexPath row]] atIndexedSubscript:[fromIndexPath row]];
+    [apps setObject:[aux objectAtIndex:[fromIndexPath row]] atIndexedSubscript:[toIndexPath row]];
+    
+    aux = desc;
+    [desc setObject:[desc objectAtIndex:[fromIndexPath row]] atIndexedSubscript:[toIndexPath row]];
+    [desc setObject:[aux objectAtIndex:[toIndexPath row]] atIndexedSubscript:[fromIndexPath row]];
+    
+    aux = imgs;
+    [imgs setObject:[imgs objectAtIndex:[fromIndexPath row]] atIndexedSubscript:[toIndexPath row]];
+    [imgs setObject:[aux objectAtIndex:[toIndexPath row]] atIndexedSubscript:[fromIndexPath row]];
     
 }
 
