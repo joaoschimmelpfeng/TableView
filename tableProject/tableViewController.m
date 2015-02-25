@@ -110,17 +110,29 @@ BOOL isEditing;
 // Override to support rearranging the table view.
 - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
 {
-    NSMutableArray *aux = apps;
-    [apps setObject:[apps objectAtIndex:[toIndexPath row]] atIndexedSubscript:[fromIndexPath row]];
-    [apps setObject:[aux objectAtIndex:[fromIndexPath row]] atIndexedSubscript:[toIndexPath row]];
+    NSString *aux = [apps objectAtIndex:[fromIndexPath row]];
+    [apps removeObject:[ apps objectAtIndex:[fromIndexPath row]]] ;
+    [apps insertObject:aux atIndex:[toIndexPath row]];
     
-    aux = desc;
-    [desc setObject:[desc objectAtIndex:[fromIndexPath row]] atIndexedSubscript:[toIndexPath row]];
-    [desc setObject:[aux objectAtIndex:[toIndexPath row]] atIndexedSubscript:[fromIndexPath row]];
+    aux = [desc objectAtIndex:[fromIndexPath row]];
+    [desc removeObject: [desc objectAtIndex:[ fromIndexPath row] ] ] ;
+    [desc insertObject:aux atIndex:[toIndexPath row]];
     
-    aux = imgs;
-    [imgs setObject:[imgs objectAtIndex:[fromIndexPath row]] atIndexedSubscript:[toIndexPath row]];
-    [imgs setObject:[aux objectAtIndex:[toIndexPath row]] atIndexedSubscript:[fromIndexPath row]];
+    
+    UIImage *aux2 = [imgs objectAtIndex:[fromIndexPath row]];
+    [imgs removeObject:[imgs objectAtIndex:[fromIndexPath row]]  ] ;
+    [imgs insertObject:aux2 atIndex:[toIndexPath row]];
+    
+   //  etObject:[apps objectAtIndex:[toIndexPath row]] atIndexedSubscript:[fromIndexPath row]];
+//    [apps setObject:[aux objectAtIndex:[fromIndexPath row]] atIndexedSubscript:[toIndexPath row]];
+//    
+//    aux = desc;
+//    [desc setObject:[desc objectAtIndex:[fromIndexPath row]] atIndexedSubscript:[toIndexPath row]];
+//    [desc setObject:[aux objectAtIndex:[toIndexPath row]] atIndexedSubscript:[fromIndexPath row]];
+//    
+//    aux = imgs;
+//    [imgs setObject:[imgs objectAtIndex:[fromIndexPath row]] atIndexedSubscript:[toIndexPath row]];
+//    [imgs setObject:[aux objectAtIndex:[toIndexPath row]] atIndexedSubscript:[fromIndexPath row]];
     
 }
 
