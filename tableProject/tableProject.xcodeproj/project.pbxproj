@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D4BF5AEF1A9E44C00083E3E9 /* AppTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D4BF5AEE1A9E44C00083E3E9 /* AppTableViewCell.m */; };
 		E66B0AE91A9E41E800AAEC7A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E66B0AE81A9E41E800AAEC7A /* main.m */; };
 		E66B0AEC1A9E41E800AAEC7A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E66B0AEB1A9E41E800AAEC7A /* AppDelegate.m */; };
 		E66B0AF21A9E41E800AAEC7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E66B0AF01A9E41E800AAEC7A /* Main.storyboard */; };
@@ -27,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D4BF5AED1A9E44C00083E3E9 /* AppTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppTableViewCell.h; sourceTree = "<group>"; };
+		D4BF5AEE1A9E44C00083E3E9 /* AppTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppTableViewCell.m; sourceTree = "<group>"; };
 		E66B0AE31A9E41E800AAEC7A /* tableProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tableProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E66B0AE71A9E41E800AAEC7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E66B0AE81A9E41E800AAEC7A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -83,6 +86,8 @@
 			children = (
 				E66B0AEA1A9E41E800AAEC7A /* AppDelegate.h */,
 				E66B0AEB1A9E41E800AAEC7A /* AppDelegate.m */,
+				D4BF5AED1A9E44C00083E3E9 /* AppTableViewCell.h */,
+				D4BF5AEE1A9E44C00083E3E9 /* AppTableViewCell.m */,
 				E66B0B0C1A9E42E900AAEC7A /* tableViewController.h */,
 				E66B0B0D1A9E42E900AAEC7A /* tableViewController.m */,
 				E66B0AF01A9E41E800AAEC7A /* Main.storyboard */,
@@ -220,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E66B0AEC1A9E41E800AAEC7A /* AppDelegate.m in Sources */,
+				D4BF5AEF1A9E44C00083E3E9 /* AppTableViewCell.m in Sources */,
 				E66B0B0E1A9E42E900AAEC7A /* tableViewController.m in Sources */,
 				E66B0AE91A9E41E800AAEC7A /* main.m in Sources */,
 			);
@@ -414,6 +420,7 @@
 				E66B0B081A9E41E800AAEC7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E66B0B091A9E41E800AAEC7A /* Build configuration list for PBXNativeTarget "tableProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +429,7 @@
 				E66B0B0B1A9E41E800AAEC7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
