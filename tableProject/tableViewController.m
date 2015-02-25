@@ -17,6 +17,8 @@
 @implementation tableViewController
 @synthesize apps,imgs,desc;
 
+BOOL isEditing;
+
 - (void)viewDidLoad
 {
  [super viewDidLoad];
@@ -34,7 +36,24 @@
     [desc addObject:[NSString stringWithFormat:@"Diversao"]];
     [desc addObject:[NSString stringWithFormat:@"Social"]];
     [desc addObject:[NSString stringWithFormat:@"Social"]];
+    isEditing = false;
+    
 }
+
+/*
+- (void)loadView
+{
+    CGRect titleRect = CGRectMake(0, 0, 300, 40);
+    UILabel *tableTitle = [[UILabel alloc] initWithFrame:titleRect];
+    tableTitle.textColor = [UIColor blueColor];
+    tableTitle.backgroundColor = [self.tableView backgroundColor];
+    tableTitle.opaque = YES;
+    tableTitle.font = [UIFont boldSystemFontOfSize:18];
+    tableTitle.text = [NSString stringWithFormat:@"Teste"];
+    self.tableView.tableHeaderView = tableTitle;
+    [self.tableView reloadData];
+}
+*/
 
 - (void)didReceiveMemoryWarning
 {
@@ -69,39 +88,38 @@
 }
 
 
-/*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
     // Return NO if you do not want the specified item to be editable.
     return YES;
 }
-*/
 
-/*
 // Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
+    if (editingStyle == UITableViewCellEditingStyleDelete)
+    {
         // Delete the row from the data source
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
+    } else if (editingStyle == UITableViewCellEditingStyleInsert)
+    {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
     }   
 }
-*/
 
-/*
+
 // Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
+- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
+{
+    NSMutableArray *aux = apps;
+    
 }
-*/
 
-/*
+
 // Override to support conditional rearranging of the table view.
 - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
     // Return NO if you do not want the item to be re-orderable.
     return YES;
 }
-*/
 
 
 #pragma mark - Navigation
@@ -124,4 +142,17 @@
     
  }
 
+- (IBAction)editar:(id)sender
+{
+    if(isEditing)
+    {
+     [self.tableView setEditing:NO animated:NO];
+        isEditing = false;
+    }
+    else
+    {
+     [self.tableView setEditing:YES animated:YES];
+        isEditing = true;
+    }
+}
 @end

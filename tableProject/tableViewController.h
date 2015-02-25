@@ -10,6 +10,7 @@
 
 @interface tableViewController : UITableViewController
 @property NSMutableArray *apps;
+- (IBAction)editar:(id)sender;
 @property NSMutableArray *imgs;
 @property NSMutableArray *desc;
 @end
