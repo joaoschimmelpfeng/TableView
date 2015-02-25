@@ -9,7 +9,7 @@
 #import "AppTableViewCell.h"
 
 @implementation AppTableViewCell
-@synthesize label1,imageView1;
+@synthesize label1,imageView1,label2;
 
 
 
@@ -18,7 +18,8 @@
     
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated
+{
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state

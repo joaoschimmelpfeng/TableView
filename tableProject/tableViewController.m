@@ -8,17 +8,32 @@
 
 #import "tableViewController.h"
 #import "AppTableViewCell.h"
+#import "showView.h"
 
 @interface tableViewController ()
 
 @end
 
 @implementation tableViewController
+@synthesize apps,imgs,desc;
 
 - (void)viewDidLoad
 {
  [super viewDidLoad];
-
+    apps = [[NSMutableArray alloc] init];
+    [apps addObject:[NSString stringWithFormat:@"Plants Vs Zombies"]];
+    [apps addObject:[NSString stringWithFormat:@"Facebook"]];
+    [apps addObject:[NSString stringWithFormat:@"Whatsapp"]];
+    
+    imgs = [[NSMutableArray alloc] init];
+    [imgs addObject:[UIImage imageNamed:@"plantslogo.png"]];
+    [imgs addObject:[UIImage imageNamed:@"facebooklogo.jpg"]];
+    [imgs addObject:[UIImage imageNamed:@"whatslogo.png"]];
+    
+    desc = [[NSMutableArray alloc] init];
+    [desc addObject:[NSString stringWithFormat:@"Diversao"]];
+    [desc addObject:[NSString stringWithFormat:@"Social"]];
+    [desc addObject:[NSString stringWithFormat:@"Social"]];
 }
 
 - (void)didReceiveMemoryWarning
@@ -37,12 +52,18 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 1;
+    return apps.count;
 }
 
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
     AppTableViewCell *cell = (AppTableViewCell *) [tableView dequeueReusableCellWithIdentifier:@"celula" forIndexPath:indexPath];
+    
+    cell.label1.text = [apps objectAtIndex:[indexPath row]];
+    cell.label2.text = [desc objectAtIndex:[indexPath row]];
+    [cell.imageView setImage:[imgs objectAtIndex:[indexPath row]]];
+
     
     return cell;
 }
@@ -82,14 +103,25 @@
 }
 */
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+#pragma mark - Navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender 
+ {
+     
+     if([[segue identifier] isEqualToString:@"passagem"])
+     {
+         NSIndexPath *num = [self.tableView indexPathForSelectedRow];
+         showView *sView = segue.destinationViewController;
+         NSMutableArray *vetorNovo = [[NSMutableArray alloc] init];
+         [vetorNovo addObject:[apps objectAtIndex:[num row]]];
+         [vetorNovo addObject:[desc objectAtIndex:[num row]]];
+         [vetorNovo addObject:[imgs objectAtIndex:[num row]]];
+         sView.vetorDados = vetorNovo;
+     }
+     
+         
+     
+    
+ }
 
 @end

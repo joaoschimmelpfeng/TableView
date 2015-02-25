@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface tableViewController : UITableViewController
-
+@property NSMutableArray *apps;
+@property NSMutableArray *imgs;
+@property NSMutableArray *desc;
 @end

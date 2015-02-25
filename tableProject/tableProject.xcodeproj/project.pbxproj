@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		10B725711A9E48CF008D7C9F /* whatslogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 10B725701A9E48CF008D7C9F /* whatslogo.png */; };
-		10B725731A9E48DD008D7C9F /* plantslogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 10B725721A9E48DD008D7C9F /* plantslogo.png */; };
-		10B725751A9E48E9008D7C9F /* facebooklogo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10B725741A9E48E9008D7C9F /* facebooklogo.jpg */; };
 		D4BF5AEF1A9E44C00083E3E9 /* AppTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D4BF5AEE1A9E44C00083E3E9 /* AppTableViewCell.m */; };
 		E66B0AE91A9E41E800AAEC7A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E66B0AE81A9E41E800AAEC7A /* main.m */; };
 		E66B0AEC1A9E41E800AAEC7A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E66B0AEB1A9E41E800AAEC7A /* AppDelegate.m */; };
@@ -18,6 +15,10 @@
 		E66B0AF71A9E41E800AAEC7A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E66B0AF51A9E41E800AAEC7A /* LaunchScreen.xib */; };
 		E66B0B031A9E41E800AAEC7A /* tableProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E66B0B021A9E41E800AAEC7A /* tableProjectTests.m */; };
 		E66B0B141A9E481800AAEC7A /* tableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E66B0B131A9E481800AAEC7A /* tableViewController.m */; };
+		E66B0B371A9E552A00AAEC7A /* facebooklogo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E66B0B341A9E552A00AAEC7A /* facebooklogo.jpg */; };
+		E66B0B381A9E552A00AAEC7A /* plantslogo.png in Resources */ = {isa = PBXBuildFile; fileRef = E66B0B351A9E552A00AAEC7A /* plantslogo.png */; };
+		E66B0B391A9E552A00AAEC7A /* whatslogo.png in Resources */ = {isa = PBXBuildFile; fileRef = E66B0B361A9E552A00AAEC7A /* whatslogo.png */; };
+		E66B0B421A9E5BC000AAEC7A /* showView.m in Sources */ = {isa = PBXBuildFile; fileRef = E66B0B411A9E5BC000AAEC7A /* showView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,9 +32,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		10B725701A9E48CF008D7C9F /* whatslogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = whatslogo.png; path = ../../../Downloads/whatslogo.png; sourceTree = "<group>"; };
-		10B725721A9E48DD008D7C9F /* plantslogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = plantslogo.png; path = ../../../Downloads/plantslogo.png; sourceTree = "<group>"; };
-		10B725741A9E48E9008D7C9F /* facebooklogo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = facebooklogo.jpg; path = ../../../Downloads/facebooklogo.jpg; sourceTree = "<group>"; };
 		D4BF5AED1A9E44C00083E3E9 /* AppTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppTableViewCell.h; sourceTree = "<group>"; };
 		D4BF5AEE1A9E44C00083E3E9 /* AppTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppTableViewCell.m; sourceTree = "<group>"; };
 		E66B0AE31A9E41E800AAEC7A /* tableProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tableProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +47,11 @@
 		E66B0B021A9E41E800AAEC7A /* tableProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tableProjectTests.m; sourceTree = "<group>"; };
 		E66B0B121A9E481800AAEC7A /* tableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tableViewController.h; sourceTree = SOURCE_ROOT; };
 		E66B0B131A9E481800AAEC7A /* tableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tableViewController.m; sourceTree = SOURCE_ROOT; };
+		E66B0B341A9E552A00AAEC7A /* facebooklogo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = facebooklogo.jpg; sourceTree = "<group>"; };
+		E66B0B351A9E552A00AAEC7A /* plantslogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plantslogo.png; sourceTree = "<group>"; };
+		E66B0B361A9E552A00AAEC7A /* whatslogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whatslogo.png; sourceTree = "<group>"; };
+		E66B0B401A9E5BC000AAEC7A /* showView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = showView.h; sourceTree = "<group>"; };
+		E66B0B411A9E5BC000AAEC7A /* showView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = showView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,13 +97,15 @@
 				E66B0AEB1A9E41E800AAEC7A /* AppDelegate.m */,
 				D4BF5AED1A9E44C00083E3E9 /* AppTableViewCell.h */,
 				D4BF5AEE1A9E44C00083E3E9 /* AppTableViewCell.m */,
+				E66B0B341A9E552A00AAEC7A /* facebooklogo.jpg */,
+				E66B0B351A9E552A00AAEC7A /* plantslogo.png */,
+				E66B0B361A9E552A00AAEC7A /* whatslogo.png */,
 				E66B0B121A9E481800AAEC7A /* tableViewController.h */,
 				E66B0B131A9E481800AAEC7A /* tableViewController.m */,
+				E66B0B401A9E5BC000AAEC7A /* showView.h */,
+				E66B0B411A9E5BC000AAEC7A /* showView.m */,
 				E66B0AF01A9E41E800AAEC7A /* Main.storyboard */,
 				E66B0AF31A9E41E800AAEC7A /* Images.xcassets */,
-				10B725741A9E48E9008D7C9F /* facebooklogo.jpg */,
-				10B725721A9E48DD008D7C9F /* plantslogo.png */,
-				10B725701A9E48CF008D7C9F /* whatslogo.png */,
 				E66B0AF51A9E41E800AAEC7A /* LaunchScreen.xib */,
 				E66B0AE61A9E41E800AAEC7A /* Supporting Files */,
 			);
@@ -213,11 +218,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10B725751A9E48E9008D7C9F /* facebooklogo.jpg in Resources */,
-				10B725731A9E48DD008D7C9F /* plantslogo.png in Resources */,
-				10B725711A9E48CF008D7C9F /* whatslogo.png in Resources */,
+				E66B0B381A9E552A00AAEC7A /* plantslogo.png in Resources */,
 				E66B0AF21A9E41E800AAEC7A /* Main.storyboard in Resources */,
 				E66B0AF71A9E41E800AAEC7A /* LaunchScreen.xib in Resources */,
+				E66B0B371A9E552A00AAEC7A /* facebooklogo.jpg in Resources */,
+				E66B0B391A9E552A00AAEC7A /* whatslogo.png in Resources */,
 				E66B0AF41A9E41E800AAEC7A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -236,6 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E66B0B421A9E5BC000AAEC7A /* showView.m in Sources */,
 				E66B0B141A9E481800AAEC7A /* tableViewController.m in Sources */,
 				E66B0AEC1A9E41E800AAEC7A /* AppDelegate.m in Sources */,
 				D4BF5AEF1A9E44C00083E3E9 /* AppTableViewCell.m in Sources */,
